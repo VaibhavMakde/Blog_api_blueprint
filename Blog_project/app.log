@@ -1,0 +1,93 @@
+2022-10-10 10:41:36,187 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-10 10:41:36,187 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-10 10:43:01,751 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-10 10:43:01,751 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-10 10:43:01,753 INFO werkzeug :  * Restarting with stat
+2022-10-10 10:43:02,427 WARNING werkzeug :  * Debugger is active!
+2022-10-10 10:43:02,449 INFO werkzeug :  * Debugger PIN: 404-742-536
+2022-10-10 11:03:50,853 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/__init__.py', reloading
+2022-10-10 11:03:51,176 INFO werkzeug :  * Restarting with stat
+2022-10-10 11:03:52,389 WARNING werkzeug :  * Debugger is active!
+2022-10-10 11:03:52,418 INFO werkzeug :  * Debugger PIN: 529-438-397
+2022-10-10 12:50:09,448 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/__init__.py', reloading
+2022-10-10 12:50:09,726 INFO werkzeug :  * Restarting with stat
+2022-10-10 12:50:10,880 WARNING werkzeug :  * Debugger is active!
+2022-10-10 12:50:10,895 INFO werkzeug :  * Debugger PIN: 243-707-005
+2022-10-10 15:38:45,392 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/__init__.py', reloading
+2022-10-10 15:38:45,607 INFO werkzeug :  * Restarting with stat
+2022-10-10 15:52:48,955 INFO werkzeug :  * Restarting with stat
+2022-10-10 15:52:49,850 WARNING werkzeug :  * Debugger is active!
+2022-10-10 15:52:49,862 INFO werkzeug :  * Debugger PIN: 310-798-732
+2022-10-11 16:38:20,001 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-11 16:38:20,002 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-11 16:38:39,718 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-11 16:38:39,718 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-11 16:38:39,721 INFO werkzeug :  * Restarting with stat
+2022-10-11 16:38:40,454 WARNING werkzeug :  * Debugger is active!
+2022-10-11 16:38:40,529 INFO werkzeug :  * Debugger PIN: 121-471-061
+2022-10-11 16:41:05,353 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-11 16:41:05,353 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-11 16:41:05,354 INFO werkzeug :  * Restarting with stat
+2022-10-11 16:41:06,017 WARNING werkzeug :  * Debugger is active!
+2022-10-11 16:41:06,037 INFO werkzeug :  * Debugger PIN: 537-379-718
+2022-10-11 16:41:47,580 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/__init__.py', reloading
+2022-10-11 16:41:47,719 INFO werkzeug :  * Restarting with stat
+2022-10-11 16:41:48,455 WARNING werkzeug :  * Debugger is active!
+2022-10-11 16:41:48,463 INFO werkzeug :  * Debugger PIN: 242-073-736
+2022-10-11 16:42:19,828 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/__init__.py', reloading
+2022-10-11 16:42:20,145 INFO werkzeug :  * Restarting with stat
+2022-10-11 16:42:20,976 WARNING werkzeug :  * Debugger is active!
+2022-10-11 16:42:20,987 INFO werkzeug :  * Debugger PIN: 865-551-989
+2022-10-11 16:42:42,303 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-11 16:42:42,303 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-11 16:42:42,304 INFO werkzeug :  * Restarting with stat
+2022-10-11 16:42:43,258 WARNING werkzeug :  * Debugger is active!
+2022-10-11 16:42:43,288 INFO werkzeug :  * Debugger PIN: 100-525-126
+2022-10-11 16:43:11,598 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/__init__.py', reloading
+2022-10-11 16:43:11,844 INFO werkzeug :  * Restarting with stat
+2022-10-11 16:43:12,724 WARNING werkzeug :  * Debugger is active!
+2022-10-11 16:43:12,732 INFO werkzeug :  * Debugger PIN: 386-816-495
+2022-10-11 16:43:55,210 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/__init__.py', reloading
+2022-10-11 16:43:55,422 INFO werkzeug :  * Restarting with stat
+2022-10-11 16:43:56,311 WARNING werkzeug :  * Debugger is active!
+2022-10-11 16:43:56,319 INFO werkzeug :  * Debugger PIN: 228-968-032
+2022-10-11 17:36:56,985 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-11 17:36:56,985 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-11 17:36:56,987 INFO werkzeug :  * Restarting with stat
+2022-10-11 17:36:57,831 WARNING werkzeug :  * Debugger is active!
+2022-10-11 17:36:57,859 INFO werkzeug :  * Debugger PIN: 109-621-912
+2022-10-11 17:37:40,907 INFO werkzeug : 127.0.0.1 - - [11/Oct/2022 17:37:40] "[33mGET / HTTP/1.1[0m" 404 -
+2022-10-11 17:37:41,095 INFO werkzeug : 127.0.0.1 - - [11/Oct/2022 17:37:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-10-11 17:38:37,956 INFO werkzeug : 127.0.0.1 - - [11/Oct/2022 17:38:37] "POST /login HTTP/1.1" 200 -
+2022-10-11 17:38:45,438 INFO werkzeug : 127.0.0.1 - - [11/Oct/2022 17:38:45] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2022-10-11 17:38:45,693 INFO werkzeug : 127.0.0.1 - - [11/Oct/2022 17:38:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-10-11 17:38:55,345 INFO werkzeug : 127.0.0.1 - - [11/Oct/2022 17:38:55] "[33mGET /swagger/ HTTP/1.1[0m" 404 -
+2022-10-11 17:46:27,543 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2022-10-11 17:46:27,543 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-11 17:46:27,544 INFO werkzeug :  * Restarting with stat
+2022-10-11 17:46:28,315 WARNING werkzeug :  * Debugger is active!
+2022-10-11 17:46:28,334 INFO werkzeug :  * Debugger PIN: 787-116-111
+2022-10-11 17:49:49,854 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2022-10-11 17:49:49,855 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-11 17:49:49,856 INFO werkzeug :  * Restarting with stat
+2022-10-11 17:49:50,517 WARNING werkzeug :  * Debugger is active!
+2022-10-11 17:49:50,525 INFO werkzeug :  * Debugger PIN: 121-506-108
+2022-10-11 17:51:00,592 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-11 17:51:00,593 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-11 17:51:00,594 INFO werkzeug :  * Restarting with stat
+2022-10-11 17:51:01,267 WARNING werkzeug :  * Debugger is active!
+2022-10-11 17:51:01,274 INFO werkzeug :  * Debugger PIN: 140-117-633
