@@ -1,7 +1,7 @@
 import logging
 from flask import Flask
 from flask_redis import FlaskRedis
-from .extensions import db, migrate, jwt, redis_client
+from .extensions import db, migrate, jwt, redis_cache
 
 
 def create_app():
@@ -20,16 +20,23 @@ def create_app():
     app.config[
         "JWT_SECRET_KEY"] = "0ddf5597e02d981f8803c4cc11f015a4e52679d706edb29b595d9e466def5bcf95273a3053ab5d97ee893c23e4023b912daefaade316406a33b7685d4d223dfa"
     app.debug = True
-    '''The init_app method exists so that the SQLite3 
-    object can be instantiated without requiring an app object. '''
-    db.init_app(app)
-    migrate.init_app(app, db)
-    jwt.init_app(app)
 
+    # configure the redis
+    app.config["REDIS_HOST"] = "localhost"
+    app.config["REDIS_PASSWORD"] = "password"
+    app.config["REDIS_PORT"] = 6379
+
+    # register the API blueprints
     from .routes.routes import api
     app.register_blueprint(api)
 
-    redis_client.init_app(app)
+    '''The init_app method exists so that the SQLite3 
+        object can be instantiated without requiring an app object. '''
+    db.init_app(app)
+    migrate.init_app(app, db)
+    jwt.init_app(app)
+    redis_cache.init_app(app)
+
     return app
 
 

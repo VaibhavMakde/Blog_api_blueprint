@@ -29,7 +29,7 @@ class Blog(db.Model):
     comments = db.relationship('Comment', backref='blog')
 
 
-######################    MODELS SCHEMA USING MARSHMALLOW HERE  ########################################
+######################   MODELS SCHEMA USING MARSHMALLOW HERE  ########################################
 
 class CommentSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
@@ -58,5 +58,3 @@ class UserSchema(ma.SQLAlchemyAutoSchema):
         load_instance = True
         include_relationships = True
         fields = ('id', 'public_id', 'username', 'admin')
-
-

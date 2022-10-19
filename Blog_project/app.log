@@ -91,3 +91,574 @@
 2022-10-11 17:51:00,594 INFO werkzeug :  * Restarting with stat
 2022-10-11 17:51:01,267 WARNING werkzeug :  * Debugger is active!
 2022-10-11 17:51:01,274 INFO werkzeug :  * Debugger PIN: 140-117-633
+2022-10-12 09:19:30,312 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-12 09:19:30,312 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-12 09:19:53,871 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-12 09:19:53,871 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-12 09:19:53,873 INFO werkzeug :  * Restarting with stat
+2022-10-12 09:19:54,549 WARNING werkzeug :  * Debugger is active!
+2022-10-12 09:19:54,584 INFO werkzeug :  * Debugger PIN: 898-323-535
+2022-10-12 09:20:31,953 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 09:20:31] "POST /login HTTP/1.1" 200 -
+2022-10-12 09:20:51,732 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 09:20:51] "POST /login HTTP/1.1" 200 -
+2022-10-12 09:20:57,768 INFO myproject : Current User : Vaibhav
+2022-10-12 09:20:57,771 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 09:20:57,773 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 09:20:57] "GET /user HTTP/1.1" 200 -
+2022-10-12 09:21:10,142 INFO myproject : Blogs : [{'blog': "Head of Tata Sons--conglomerate with interests in everything from tea to steel--is India's best brand ambassador. Made automotive history last year with his $2,200 Tata Nano, the world's cheapest auto. Calls Nano The People's Car In nation of a billion, environmentalists call it eco-disaster. Not far off: After Nano debuted in 2008, India's passenger car sales rose most in three years in 2009; three Tata competitors now working on Nano copycats.", 'id': 1, 'title': 'Ratan Tata', 'comments': [{'id': 1, 'post_id': 1, 'text': 'Great actor', 'author': 'Admin'}, {'id': 2, 'post_id': 1, 'text': 'Good actor', 'author': 'Admin'}, {'id': 3, 'post_id': 1, 'text': 'Great man', 'author': 'Admin'}, {'id': 7, 'post_id': 1, 'text': 'Bollywood actor', 'author': 'Admin'}, {'id': 8, 'post_id': 1, 'text': 'Bollywood actor', 'author': 'Admin'}], 'author': 'Admin'}, {'blog': 'Abdur Rehman Shahrukh Khan was born on November 02, 1965 in New Delhi to Meer Taj Mohammed Khan & Lateef Fatima Khan. He also has an elder sister, Shehnaz Lalarukh. He spent his early days in Bangalore with his grandparents. His father used to run a restaurant in Delhi. His father died in 1981 and mother in 1991', 'id': 2, 'title': 'sharuk khan', 'comments': [{'id': 4, 'post_id': 2, 'text': 'Great man', 'author': 'Admin'}, {'id': 5, 'post_id': 2, 'text': 'Good man', 'author': 'Admin'}, {'id': 6, 'post_id': 2, 'text': 'Best Actor', 'author': 'Admin'}], 'author': 'Admin'}, {'blog': 'The artist withdrew from the music biz in 2014, at the zenith of his singing career. His 18-month absence from socialisation was eventually discovered to be due to his bipolar disorder. Nevertheless, he made a solid comeback in 2018 and has continued to produce popular songs and videos since then', 'id': 3, 'title': 'Honey Singh', 'comments': [], 'author': 'Vaibhav'}, {'blog': 'The artist withdrew from the music biz in 2014, at the zenith of his singing career. His 18-month absence from socialisation was eventually discovered to be due to his bipolar disorder. Nevertheless, he made a solid comeback in 2018 and has continued to produce popular songs and videos since then', 'id': 4, 'title': 'justin biber', 'comments': [], 'author': 'Vaibhav'}]
+2022-10-12 09:21:10,143 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 09:21:10] "GET /blog HTTP/1.1" 200 -
+2022-10-12 09:21:40,459 INFO myproject : Blog : {'blog': "Head of Tata Sons--conglomerate with interests in everything from tea to steel--is India's best brand ambassador. Made automotive history last year with his $2,200 Tata Nano, the world's cheapest auto. Calls Nano The People's Car In nation of a billion, environmentalists call it eco-disaster. Not far off: After Nano debuted in 2008, India's passenger car sales rose most in three years in 2009; three Tata competitors now working on Nano copycats.", 'id': 1, 'title': 'Ratan Tata', 'comments': [{'id': 1, 'post_id': 1, 'text': 'Great actor', 'author': 'Admin'}, {'id': 2, 'post_id': 1, 'text': 'Good actor', 'author': 'Admin'}, {'id': 3, 'post_id': 1, 'text': 'Great man', 'author': 'Admin'}, {'id': 7, 'post_id': 1, 'text': 'Bollywood actor', 'author': 'Admin'}, {'id': 8, 'post_id': 1, 'text': 'Bollywood actor', 'author': 'Admin'}], 'author': 'Admin'}!
+2022-10-12 09:21:40,460 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 09:21:40] "GET /blog/1 HTTP/1.1" 200 -
+2022-10-12 09:21:50,061 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 09:21:50] "[33mGET /blog/1/comments HTTP/1.1[0m" 404 -
+2022-10-12 09:21:52,060 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 09:21:52] "[33mGET /blog/1/comment/ HTTP/1.1[0m" 404 -
+2022-10-12 09:21:53,061 INFO myproject : Comment Data : [{'id': 1, 'post_id': 1, 'text': 'Great actor', 'author': 'Admin'}, {'id': 2, 'post_id': 1, 'text': 'Good actor', 'author': 'Admin'}, {'id': 3, 'post_id': 1, 'text': 'Great man', 'author': 'Admin'}, {'id': 7, 'post_id': 1, 'text': 'Bollywood actor', 'author': 'Admin'}, {'id': 8, 'post_id': 1, 'text': 'Bollywood actor', 'author': 'Admin'}]
+2022-10-12 09:21:53,063 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 09:21:53] "GET /blog/1/comment HTTP/1.1" 200 -
+2022-10-12 09:22:04,900 INFO myproject : Current User : Vaibhav
+2022-10-12 09:22:04,903 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 09:22:04,904 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 09:22:04] "GET /user HTTP/1.1" 200 -
+2022-10-12 09:33:02,030 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 09:33:02,235 INFO werkzeug :  * Restarting with stat
+2022-10-12 09:35:29,396 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-12 09:35:29,396 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-12 09:35:29,397 INFO werkzeug :  * Restarting with stat
+2022-10-12 09:35:30,058 WARNING werkzeug :  * Debugger is active!
+2022-10-12 09:35:30,065 INFO werkzeug :  * Debugger PIN: 131-427-206
+2022-10-12 10:36:14,422 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-12 10:36:14,422 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-12 10:36:14,423 INFO werkzeug :  * Restarting with stat
+2022-10-12 10:36:15,091 WARNING werkzeug :  * Debugger is active!
+2022-10-12 10:36:15,098 INFO werkzeug :  * Debugger PIN: 359-308-497
+2022-10-12 10:36:17,596 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 10:36:17] "[31m[1mGET /user HTTP/1.1[0m" 401 -
+2022-10-12 10:36:22,393 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 10:36:22] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2022-10-12 10:36:29,410 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 10:36:29] "POST /login HTTP/1.1" 200 -
+2022-10-12 10:36:41,224 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 10:36:41] "POST /login HTTP/1.1" 200 -
+2022-10-12 10:36:46,648 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 10:36:46] "[33mGET /users HTTP/1.1[0m" 404 -
+2022-10-12 10:37:06,368 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 10:37:06] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 10:37:55,383 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 10:37:55,580 INFO werkzeug :  * Restarting with stat
+2022-10-12 10:37:56,425 WARNING werkzeug :  * Debugger is active!
+2022-10-12 10:37:56,432 INFO werkzeug :  * Debugger PIN: 514-144-762
+2022-10-12 10:37:56,476 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 10:37:56] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 10:38:42,089 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 10:38:42,304 INFO werkzeug :  * Restarting with stat
+2022-10-12 10:38:43,225 WARNING werkzeug :  * Debugger is active!
+2022-10-12 10:38:43,233 INFO werkzeug :  * Debugger PIN: 106-076-154
+2022-10-12 10:39:20,744 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 10:39:21,017 INFO werkzeug :  * Restarting with stat
+2022-10-12 10:39:21,897 WARNING werkzeug :  * Debugger is active!
+2022-10-12 10:39:21,904 INFO werkzeug :  * Debugger PIN: 247-144-918
+2022-10-12 10:39:21,950 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 10:39:21] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 10:39:45,249 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 10:39:45,529 INFO werkzeug :  * Restarting with stat
+2022-10-12 10:39:46,334 WARNING werkzeug :  * Debugger is active!
+2022-10-12 10:39:46,341 INFO werkzeug :  * Debugger PIN: 136-235-574
+2022-10-12 10:39:46,388 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 10:39:46] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 10:56:55,536 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-12 10:56:55,536 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-12 11:03:20,182 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:03:20] "POST /login HTTP/1.1" 200 -
+2022-10-12 11:03:37,772 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:03:37] "POST /login HTTP/1.1" 200 -
+2022-10-12 11:03:44,114 INFO myproject : Current User : Vaibhav
+2022-10-12 11:03:44,118 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 11:03:44,119 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:03:44] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:04:18,000 INFO myproject : Current User : Vaibhav
+2022-10-12 11:04:18,004 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 11:04:18,005 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:04:18] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:04:40,652 INFO myproject : Current User : Vaibhav
+2022-10-12 11:04:40,657 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 11:04:40,658 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:04:40] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:04:41,383 INFO myproject : Current User : Vaibhav
+2022-10-12 11:04:41,386 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 11:04:41,387 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:04:41] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:04:41,536 INFO myproject : Current User : Vaibhav
+2022-10-12 11:04:41,539 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 11:04:41,541 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:04:41] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:04:41,813 INFO myproject : Current User : Vaibhav
+2022-10-12 11:04:41,815 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 11:04:41,816 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:04:41] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:04:41,978 INFO myproject : Current User : Vaibhav
+2022-10-12 11:04:41,981 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 11:04:41,982 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:04:41] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:04:42,126 INFO myproject : Current User : Vaibhav
+2022-10-12 11:04:42,128 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 11:04:42,129 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:04:42] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:04:42,248 INFO myproject : Current User : Vaibhav
+2022-10-12 11:04:42,250 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 11:04:42,251 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:04:42] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:04:42,409 INFO myproject : Current User : Vaibhav
+2022-10-12 11:04:42,411 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 11:04:42,412 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:04:42] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:04:42,687 INFO myproject : Current User : Vaibhav
+2022-10-12 11:04:42,689 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 11:04:42,690 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:04:42] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:04:42,827 INFO myproject : Current User : Vaibhav
+2022-10-12 11:04:42,829 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 11:04:42,830 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:04:42] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:05:04,164 INFO myproject : Current User : Vaibhav
+2022-10-12 11:05:04,167 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 11:05:04,169 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:05:04] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:05:04,746 INFO myproject : Current User : Vaibhav
+2022-10-12 11:05:04,748 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 11:05:04,749 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:05:04] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:13:44,789 INFO myproject : Current User : Vaibhav
+2022-10-12 11:13:44,816 INFO myproject : Users : [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>]
+2022-10-12 11:13:44,821 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:13:44] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:14:23,761 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-12 11:14:23,761 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-12 11:14:23,764 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:14:24,502 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:14:24,535 INFO werkzeug :  * Debugger PIN: 754-373-036
+2022-10-12 11:14:26,225 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:14:26] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 11:14:50,899 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:14:51,148 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:14:52,171 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:14:52,185 INFO werkzeug :  * Debugger PIN: 140-984-499
+2022-10-12 11:14:52,266 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:14:52] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 11:15:46,911 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:15:47,159 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:15:48,279 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:15:48,286 INFO werkzeug :  * Debugger PIN: 262-582-358
+2022-10-12 11:15:48,552 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:15:48] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 11:16:22,750 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/constants.py', reloading
+2022-10-12 11:16:22,905 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:16:23,665 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:16:23,672 INFO werkzeug :  * Debugger PIN: 124-155-432
+2022-10-12 11:16:23,702 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:16:23] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 11:17:04,212 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:17:04,443 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:17:05,522 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:17:05,531 INFO werkzeug :  * Debugger PIN: 112-764-963
+2022-10-12 11:17:05,558 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:17:05] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 11:17:12,652 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:17:12,818 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:17:13,572 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:17:13,579 INFO werkzeug :  * Debugger PIN: 142-401-784
+2022-10-12 11:17:54,171 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/constants.py', reloading
+2022-10-12 11:17:54,362 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:17:55,030 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:17:55,041 INFO werkzeug :  * Debugger PIN: 115-768-532
+2022-10-12 11:17:55,089 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:17:55] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 11:19:14,087 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:19:14,248 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:19:15,587 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:19:15,600 INFO werkzeug :  * Debugger PIN: 272-400-668
+2022-10-12 11:19:15,621 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:19:15] "[31m[1mGET /user HTTP/1.1[0m" 401 -
+2022-10-12 11:19:24,869 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:19:24] "POST /login HTTP/1.1" 200 -
+2022-10-12 11:19:48,655 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:19:48] "POST /login HTTP/1.1" 200 -
+2022-10-12 11:19:56,648 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:19:56] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 11:20:26,541 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:20:26,727 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:20:27,488 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:20:27,495 INFO werkzeug :  * Debugger PIN: 888-662-072
+2022-10-12 11:20:27,523 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:20:27] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 11:20:43,736 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:20:43,981 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:20:44,760 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:20:44,771 INFO werkzeug :  * Debugger PIN: 961-214-670
+2022-10-12 11:20:44,802 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:20:44] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 11:21:07,096 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:21:07,311 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:21:08,722 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:21:08,730 INFO werkzeug :  * Debugger PIN: 357-180-051
+2022-10-12 11:21:08,784 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:21:08] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 11:24:13,069 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:24:13,349 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:24:14,388 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:24:14,397 INFO werkzeug :  * Debugger PIN: 382-979-711
+2022-10-12 11:24:30,616 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:24:30,853 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:24:31,875 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:24:31,883 INFO werkzeug :  * Debugger PIN: 124-082-703
+2022-10-12 11:24:31,938 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:24:31] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 11:24:55,233 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:24:55,386 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:24:56,102 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:24:56,110 INFO werkzeug :  * Debugger PIN: 134-316-817
+2022-10-12 11:37:02,327 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:37:02,764 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:37:04,480 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:37:04,508 INFO werkzeug :  * Debugger PIN: 120-919-611
+2022-10-12 11:37:04,528 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:37:04] "[31m[1mGET /user HTTP/1.1[0m" 401 -
+2022-10-12 11:37:15,120 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:37:15] "POST /login HTTP/1.1" 200 -
+2022-10-12 11:37:29,498 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:37:29] "POST /login HTTP/1.1" 200 -
+2022-10-12 11:37:33,680 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:37:33] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 11:38:10,359 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:38:10,551 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:38:11,574 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:38:11,581 INFO werkzeug :  * Debugger PIN: 124-123-358
+2022-10-12 11:38:11,635 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:38:11] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 11:38:23,796 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:38:24,118 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:38:25,537 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:38:25,545 INFO werkzeug :  * Debugger PIN: 954-629-701
+2022-10-12 11:41:51,171 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:41:51,444 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:41:52,620 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:41:52,631 INFO werkzeug :  * Debugger PIN: 952-355-801
+2022-10-12 11:42:03,789 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:42:04,089 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:42:05,005 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:42:05,013 INFO werkzeug :  * Debugger PIN: 676-925-932
+2022-10-12 11:42:05,065 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:42:05] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 11:42:43,552 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:42:43,747 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:42:44,871 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:42:44,879 INFO werkzeug :  * Debugger PIN: 124-403-170
+2022-10-12 11:42:44,931 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:42:44] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 11:44:11,087 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:44:11,384 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:44:12,432 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:44:12,442 INFO werkzeug :  * Debugger PIN: 811-923-808
+2022-10-12 11:44:12,495 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:44:12] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 11:44:30,754 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:44:30,999 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:44:32,021 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:44:32,028 INFO werkzeug :  * Debugger PIN: 508-770-992
+2022-10-12 11:44:32,047 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:44:32] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:44:40,483 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:44:40] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:45:06,839 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-12 11:45:06,839 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-12 11:45:06,840 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:45:07,521 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:45:07,529 INFO werkzeug :  * Debugger PIN: 102-074-012
+2022-10-12 11:45:09,837 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:45:09] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:47:35,379 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:47:35,755 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:47:37,445 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:47:37,453 INFO werkzeug :  * Debugger PIN: 138-182-532
+2022-10-12 11:52:25,119 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:52:25,529 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:55:15,501 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-12 11:55:15,501 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-12 11:55:15,502 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:55:16,315 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:55:16,337 INFO werkzeug :  * Debugger PIN: 189-622-011
+2022-10-12 11:55:19,741 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:55:19] "[31m[1mGET /user HTTP/1.1[0m" 401 -
+2022-10-12 11:55:31,562 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:55:31] "POST /login HTTP/1.1" 200 -
+2022-10-12 11:55:45,086 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:55:45] "[31m[1mGET /user HTTP/1.1[0m" 401 -
+2022-10-12 11:55:56,502 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:55:56] "[31m[1mPOST /user HTTP/1.1[0m" 405 -
+2022-10-12 11:56:00,238 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:56:00] "[31m[1mPOST /user HTTP/1.1[0m" 405 -
+2022-10-12 11:56:07,003 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:56:07] "POST /login HTTP/1.1" 200 -
+2022-10-12 11:56:26,134 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:56:26] "POST /login HTTP/1.1" 200 -
+2022-10-12 11:56:33,724 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:56:33] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:57:54,392 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:57:54,550 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:57:56,428 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:57:56,437 INFO werkzeug :  * Debugger PIN: 115-195-255
+2022-10-12 11:59:28,669 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:59:28,856 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:59:30,410 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:59:30,420 INFO werkzeug :  * Debugger PIN: 872-562-735
+2022-10-12 11:59:30,443 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:59:30] "GET /user HTTP/1.1" 200 -
+2022-10-12 11:59:50,717 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 11:59:50,934 INFO werkzeug :  * Restarting with stat
+2022-10-12 11:59:52,524 WARNING werkzeug :  * Debugger is active!
+2022-10-12 11:59:52,537 INFO werkzeug :  * Debugger PIN: 101-497-937
+2022-10-12 11:59:52,586 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 11:59:52] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+2022-10-12 12:00:32,129 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:00:32,479 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:00:33,710 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:00:33,722 INFO werkzeug :  * Debugger PIN: 100-553-731
+2022-10-12 12:00:33,741 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:00:33] "GET /user HTTP/1.1" 200 -
+2022-10-12 12:01:10,211 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:01:10,379 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:01:12,120 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:01:12,135 INFO werkzeug :  * Debugger PIN: 119-105-579
+2022-10-12 12:03:06,589 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:03:06,909 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:03:08,909 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:03:08,924 INFO werkzeug :  * Debugger PIN: 286-143-188
+2022-10-12 12:09:52,012 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/constants.py', reloading
+2022-10-12 12:09:52,226 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:09:53,677 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:09:53,687 INFO werkzeug :  * Debugger PIN: 160-398-076
+2022-10-12 12:09:53,705 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:09:53] "GET /user HTTP/1.1" 200 -
+2022-10-12 12:09:58,562 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:09:58] "[35m[1mGET /blog HTTP/1.1[0m" 500 -
+2022-10-12 12:10:15,007 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:10:15,257 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:10:16,233 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:10:16,246 INFO werkzeug :  * Debugger PIN: 106-407-211
+2022-10-12 12:10:16,281 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:10:16] "[35m[1mGET /blog HTTP/1.1[0m" 500 -
+2022-10-12 12:10:35,545 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:10:35,792 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:10:36,607 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:10:36,615 INFO werkzeug :  * Debugger PIN: 234-434-509
+2022-10-12 12:10:36,660 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:10:36] "GET /blog HTTP/1.1" 200 -
+2022-10-12 12:10:50,737 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:10:50] "GET /blog HTTP/1.1" 200 -
+2022-10-12 12:23:38,477 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:23:38,678 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:23:40,600 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:23:40,609 INFO werkzeug :  * Debugger PIN: 259-192-826
+2022-10-12 12:23:40,623 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:23:40] "[31m[1mGET /blog HTTP/1.1[0m" 401 -
+2022-10-12 12:23:51,637 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:23:51] "POST /login HTTP/1.1" 200 -
+2022-10-12 12:24:10,297 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:24:10] "POST /login HTTP/1.1" 200 -
+2022-10-12 12:24:15,866 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:24:15] "GET /user HTTP/1.1" 200 -
+2022-10-12 12:24:26,263 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:24:26] "GET /blog HTTP/1.1" 200 -
+2022-10-12 12:28:14,078 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:28:14,330 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:28:15,415 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:28:15,425 INFO werkzeug :  * Debugger PIN: 619-194-470
+2022-10-12 12:28:18,742 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:28:18] "[33mGET /comment HTTP/1.1[0m" 404 -
+2022-10-12 12:28:34,026 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:28:34] "GET /blog HTTP/1.1" 200 -
+2022-10-12 12:28:50,566 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:28:50] "GET /blog/2/comment HTTP/1.1" 200 -
+2022-10-12 12:29:01,645 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:29:01] "GET /blog/2/comment HTTP/1.1" 200 -
+2022-10-12 12:29:22,361 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:29:22] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 12:29:24,683 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:29:24] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 12:29:34,824 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:29:34] "GET /blog/1/comment HTTP/1.1" 200 -
+2022-10-12 12:29:39,535 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:29:39] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 12:29:45,480 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:29:45] "GET /blog/4/comment HTTP/1.1" 200 -
+2022-10-12 12:29:59,429 INFO Blog_project.myproject : Blog : {'comments': [], 'title': 'justin biber', 'id': 4, 'blog': 'The artist withdrew from the music biz in 2014, at the zenith of his singing career. His 18-month absence from socialisation was eventually discovered to be due to his bipolar disorder. Nevertheless, he made a solid comeback in 2018 and has continued to produce popular songs and videos since then', 'author': 'Vaibhav'}!
+2022-10-12 12:29:59,430 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:29:59] "GET /blog/4 HTTP/1.1" 200 -
+2022-10-12 12:30:07,939 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:30:07] "GET /blog/4/comment HTTP/1.1" 200 -
+2022-10-12 12:31:09,148 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:31:09] "GET /blog/4/comment HTTP/1.1" 200 -
+2022-10-12 12:31:39,954 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:31:40,193 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:31:41,290 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:31:41,301 INFO werkzeug :  * Debugger PIN: 751-424-550
+2022-10-12 12:31:41,328 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:31:41] "GET /blog/4/comment HTTP/1.1" 200 -
+2022-10-12 12:34:53,746 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:34:53,934 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:34:54,916 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:34:54,923 INFO werkzeug :  * Debugger PIN: 891-788-673
+2022-10-12 12:34:54,959 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:34:54] "GET /blog/4/comment HTTP/1.1" 200 -
+2022-10-12 12:35:02,457 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:35:02] "GET /blog/2/comment HTTP/1.1" 200 -
+2022-10-12 12:35:03,615 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:35:03] "GET /blog/2/comment HTTP/1.1" 200 -
+2022-10-12 12:35:10,794 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:35:10] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 12:35:15,472 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:35:15] "GET /blog/4/comment HTTP/1.1" 200 -
+2022-10-12 12:35:22,514 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:35:22] "[33mGET /blog/ HTTP/1.1[0m" 404 -
+2022-10-12 12:35:23,734 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:35:23] "GET /blog HTTP/1.1" 200 -
+2022-10-12 12:35:28,037 INFO Blog_project.myproject : Blog : {'comments': [{'post_id': 2, 'author': 'Admin', 'id': 4, 'text': 'Great man'}, {'post_id': 2, 'author': 'Admin', 'id': 5, 'text': 'Good man'}, {'post_id': 2, 'author': 'Admin', 'id': 6, 'text': 'Best Actor'}], 'title': 'sharuk khan', 'blog': 'Abdur Rehman Shahrukh Khan was born on November 02, 1965 in New Delhi to Meer Taj Mohammed Khan & Lateef Fatima Khan. He also has an elder sister, Shehnaz Lalarukh. He spent his early days in Bangalore with his grandparents. His father used to run a restaurant in Delhi. His father died in 1981 and mother in 1991', 'id': 2, 'author': 'Admin'}!
+2022-10-12 12:35:28,038 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:35:28] "GET /blog/2 HTTP/1.1" 200 -
+2022-10-12 12:35:35,120 INFO Blog_project.myproject : Blog : {'comments': [], 'title': 'Honey Singh', 'blog': 'The artist withdrew from the music biz in 2014, at the zenith of his singing career. His 18-month absence from socialisation was eventually discovered to be due to his bipolar disorder. Nevertheless, he made a solid comeback in 2018 and has continued to produce popular songs and videos since then', 'id': 3, 'author': 'Vaibhav'}!
+2022-10-12 12:35:35,121 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:35:35] "GET /blog/3 HTTP/1.1" 200 -
+2022-10-12 12:35:37,579 INFO Blog_project.myproject : Blog : {'comments': [], 'title': 'justin biber', 'blog': 'The artist withdrew from the music biz in 2014, at the zenith of his singing career. His 18-month absence from socialisation was eventually discovered to be due to his bipolar disorder. Nevertheless, he made a solid comeback in 2018 and has continued to produce popular songs and videos since then', 'id': 4, 'author': 'Vaibhav'}!
+2022-10-12 12:35:37,580 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:35:37] "GET /blog/4 HTTP/1.1" 200 -
+2022-10-12 12:35:47,157 INFO Blog_project.myproject : Blog : {'comments': [{'post_id': 2, 'author': 'Admin', 'id': 4, 'text': 'Great man'}, {'post_id': 2, 'author': 'Admin', 'id': 5, 'text': 'Good man'}, {'post_id': 2, 'author': 'Admin', 'id': 6, 'text': 'Best Actor'}], 'title': 'sharuk khan', 'blog': 'Abdur Rehman Shahrukh Khan was born on November 02, 1965 in New Delhi to Meer Taj Mohammed Khan & Lateef Fatima Khan. He also has an elder sister, Shehnaz Lalarukh. He spent his early days in Bangalore with his grandparents. His father used to run a restaurant in Delhi. His father died in 1981 and mother in 1991', 'id': 2, 'author': 'Admin'}!
+2022-10-12 12:35:47,158 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:35:47] "GET /blog/2 HTTP/1.1" 200 -
+2022-10-12 12:35:52,379 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:35:52] "GET /blog/2/comment HTTP/1.1" 200 -
+2022-10-12 12:35:57,231 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:35:57] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 12:36:00,801 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:36:00] "GET /blog/4/comment HTTP/1.1" 200 -
+2022-10-12 12:36:05,236 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:36:05] "GET /blog/5/comment HTTP/1.1" 200 -
+2022-10-12 12:36:12,940 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:36:12] "GET /blog/6/comment HTTP/1.1" 200 -
+2022-10-12 12:36:17,509 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:36:17] "GET /blog/1/comment HTTP/1.1" 200 -
+2022-10-12 12:36:23,518 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:36:23] "GET /blog/1/comment HTTP/1.1" 200 -
+2022-10-12 12:36:45,533 INFO Blog_project.myproject : Blog : {'comments': [{'post_id': 1, 'author': 'Admin', 'id': 1, 'text': 'Great actor'}, {'post_id': 1, 'author': 'Admin', 'id': 2, 'text': 'Good actor'}, {'post_id': 1, 'author': 'Admin', 'id': 3, 'text': 'Great man'}, {'post_id': 1, 'author': 'Admin', 'id': 7, 'text': 'Bollywood actor'}, {'post_id': 1, 'author': 'Admin', 'id': 8, 'text': 'Bollywood actor'}], 'title': 'Ratan Tata', 'blog': "Head of Tata Sons--conglomerate with interests in everything from tea to steel--is India's best brand ambassador. Made automotive history last year with his $2,200 Tata Nano, the world's cheapest auto. Calls Nano The People's Car In nation of a billion, environmentalists call it eco-disaster. Not far off: After Nano debuted in 2008, India's passenger car sales rose most in three years in 2009; three Tata competitors now working on Nano copycats.", 'id': 1, 'author': 'Admin'}!
+2022-10-12 12:36:45,534 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:36:45] "GET /blog/1 HTTP/1.1" 200 -
+2022-10-12 12:36:56,037 INFO Blog_project.myproject : Blog : {'comments': [{'post_id': 2, 'author': 'Admin', 'id': 4, 'text': 'Great man'}, {'post_id': 2, 'author': 'Admin', 'id': 5, 'text': 'Good man'}, {'post_id': 2, 'author': 'Admin', 'id': 6, 'text': 'Best Actor'}], 'title': 'sharuk khan', 'blog': 'Abdur Rehman Shahrukh Khan was born on November 02, 1965 in New Delhi to Meer Taj Mohammed Khan & Lateef Fatima Khan. He also has an elder sister, Shehnaz Lalarukh. He spent his early days in Bangalore with his grandparents. His father used to run a restaurant in Delhi. His father died in 1981 and mother in 1991', 'id': 2, 'author': 'Admin'}!
+2022-10-12 12:36:56,037 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:36:56] "GET /blog/2 HTTP/1.1" 200 -
+2022-10-12 12:37:01,775 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:37:01] "GET /blog/2/comment HTTP/1.1" 200 -
+2022-10-12 12:39:11,170 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/constants.py', reloading
+2022-10-12 12:39:11,330 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:39:12,238 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:39:12,247 INFO werkzeug :  * Debugger PIN: 952-517-170
+2022-10-12 12:39:30,515 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/constants.py', reloading
+2022-10-12 12:39:30,752 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:39:31,629 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:39:31,640 INFO werkzeug :  * Debugger PIN: 127-455-726
+2022-10-12 12:39:46,588 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:39:46] "[31m[1mGET /blog/2/comment HTTP/1.1[0m" 401 -
+2022-10-12 12:39:47,558 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:39:47] "[31m[1mGET /blog/2/comment HTTP/1.1[0m" 401 -
+2022-10-12 12:40:05,850 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:40:05] "POST /login HTTP/1.1" 200 -
+2022-10-12 12:40:23,547 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:40:23] "POST /login HTTP/1.1" 200 -
+2022-10-12 12:40:29,577 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:40:29] "GET /user HTTP/1.1" 200 -
+2022-10-12 12:40:52,727 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:40:52] "GET /blog HTTP/1.1" 200 -
+2022-10-12 12:41:03,465 INFO Blog_project.myproject : Blog : {'title': 'Ratan Tata', 'author': 'Admin', 'comments': [{'text': 'Great actor', 'author': 'Admin', 'id': 1, 'post_id': 1}, {'text': 'Good actor', 'author': 'Admin', 'id': 2, 'post_id': 1}, {'text': 'Great man', 'author': 'Admin', 'id': 3, 'post_id': 1}, {'text': 'Bollywood actor', 'author': 'Admin', 'id': 7, 'post_id': 1}, {'text': 'Bollywood actor', 'author': 'Admin', 'id': 8, 'post_id': 1}], 'id': 1, 'blog': "Head of Tata Sons--conglomerate with interests in everything from tea to steel--is India's best brand ambassador. Made automotive history last year with his $2,200 Tata Nano, the world's cheapest auto. Calls Nano The People's Car In nation of a billion, environmentalists call it eco-disaster. Not far off: After Nano debuted in 2008, India's passenger car sales rose most in three years in 2009; three Tata competitors now working on Nano copycats."}!
+2022-10-12 12:41:03,465 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:41:03] "GET /blog/1 HTTP/1.1" 200 -
+2022-10-12 12:41:20,125 INFO Blog_project.myproject : Comment Data : {'text': 'Bollywood actor', 'author': 'Admin', 'id': 8, 'post_id': 1, 'Blog': "Head of Tata Sons--conglomerate with interests in everything from tea to steel--is India's best brand ambassador. Made automotive history last year with his $2,200 Tata Nano, the world's cheapest auto. Calls Nano The People's Car In nation of a billion, environmentalists call it eco-disaster. Not far off: After Nano debuted in 2008, India's passenger car sales rose most in three years in 2009; three Tata competitors now working on Nano copycats.", 'Blog Title': 'Ratan Tata'}
+2022-10-12 12:41:20,126 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:41:20] "GET /blog/1/comment/8 HTTP/1.1" 200 -
+2022-10-12 12:41:27,127 INFO Blog_project.myproject : No Comment found by User!
+2022-10-12 12:41:27,128 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:41:27] "DELETE /blog/1/comment/8 HTTP/1.1" 200 -
+2022-10-12 12:41:39,775 INFO Blog_project.myproject : Comment Data : {'text': 'Bollywood actor', 'author': 'Admin', 'id': 8, 'post_id': 1, 'Blog': "Head of Tata Sons--conglomerate with interests in everything from tea to steel--is India's best brand ambassador. Made automotive history last year with his $2,200 Tata Nano, the world's cheapest auto. Calls Nano The People's Car In nation of a billion, environmentalists call it eco-disaster. Not far off: After Nano debuted in 2008, India's passenger car sales rose most in three years in 2009; three Tata competitors now working on Nano copycats.", 'Blog Title': 'Ratan Tata'}
+2022-10-12 12:41:39,776 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:41:39] "GET /blog/1/comment/8 HTTP/1.1" 200 -
+2022-10-12 12:41:48,240 INFO Blog_project.myproject : No Comment found by User!
+2022-10-12 12:41:48,241 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:41:48] "DELETE /blog/1/comment/8 HTTP/1.1" 200 -
+2022-10-12 12:42:42,025 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:42:42,196 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:42:43,341 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:42:43,351 INFO werkzeug :  * Debugger PIN: 846-649-402
+2022-10-12 12:42:46,181 INFO Blog_project.myproject : Comment Data : {'post_id': 1, 'author': 'Admin', 'id': 8, 'text': 'Bollywood actor', 'Blog': "Head of Tata Sons--conglomerate with interests in everything from tea to steel--is India's best brand ambassador. Made automotive history last year with his $2,200 Tata Nano, the world's cheapest auto. Calls Nano The People's Car In nation of a billion, environmentalists call it eco-disaster. Not far off: After Nano debuted in 2008, India's passenger car sales rose most in three years in 2009; three Tata competitors now working on Nano copycats.", 'Blog Title': 'Ratan Tata'}
+2022-10-12 12:42:46,182 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:42:46] "GET /blog/1/comment/8 HTTP/1.1" 200 -
+2022-10-12 12:42:52,665 INFO Blog_project.myproject : No Comment found by User!
+2022-10-12 12:42:52,666 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:42:52] "DELETE /blog/1/comment/8 HTTP/1.1" 200 -
+2022-10-12 12:43:38,081 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:43:38,296 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:43:39,443 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:43:39,455 INFO werkzeug :  * Debugger PIN: 353-591-856
+2022-10-12 12:43:39,490 INFO Blog_project.myproject : No Comment found by User!
+2022-10-12 12:43:39,490 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:43:39] "DELETE /blog/1/comment/8 HTTP/1.1" 200 -
+2022-10-12 12:43:49,652 INFO Blog_project.myproject : Comment Data : {'text': 'Bollywood actor', 'author': 'Admin', 'id': 8, 'post_id': 1, 'Blog': "Head of Tata Sons--conglomerate with interests in everything from tea to steel--is India's best brand ambassador. Made automotive history last year with his $2,200 Tata Nano, the world's cheapest auto. Calls Nano The People's Car In nation of a billion, environmentalists call it eco-disaster. Not far off: After Nano debuted in 2008, India's passenger car sales rose most in three years in 2009; three Tata competitors now working on Nano copycats.", 'Blog Title': 'Ratan Tata'}
+2022-10-12 12:43:49,653 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:43:49] "GET /blog/1/comment/8 HTTP/1.1" 200 -
+2022-10-12 12:45:42,163 INFO Blog_project.myproject : Comment Data : {'text': 'Bollywood actor', 'author': 'Admin', 'id': 8, 'post_id': 1, 'Blog': 'Abdur Rehman Shahrukh Khan was born on November 02, 1965 in New Delhi to Meer Taj Mohammed Khan & Lateef Fatima Khan. He also has an elder sister, Shehnaz Lalarukh. He spent his early days in Bangalore with his grandparents. His father used to run a restaurant in Delhi. His father died in 1981 and mother in 1991', 'Blog Title': 'sharuk khan'}
+2022-10-12 12:45:42,164 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:45:42] "GET /blog/2/comment/8 HTTP/1.1" 200 -
+2022-10-12 12:45:52,874 INFO Blog_project.myproject : Comment Data : {'text': 'Bollywood actor', 'author': 'Admin', 'id': 8, 'post_id': 1, 'Blog': 'Abdur Rehman Shahrukh Khan was born on November 02, 1965 in New Delhi to Meer Taj Mohammed Khan & Lateef Fatima Khan. He also has an elder sister, Shehnaz Lalarukh. He spent his early days in Bangalore with his grandparents. His father used to run a restaurant in Delhi. His father died in 1981 and mother in 1991', 'Blog Title': 'sharuk khan'}
+2022-10-12 12:45:52,880 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:45:52] "GET /blog/2/comment/8 HTTP/1.1" 200 -
+2022-10-12 12:45:54,407 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:45:54] "[33mGET /blog/2/comment/ HTTP/1.1[0m" 404 -
+2022-10-12 12:45:55,836 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:45:55] "GET /blog/2/comment HTTP/1.1" 200 -
+2022-10-12 12:46:28,714 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:46:28,946 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:46:29,687 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:46:29,694 INFO werkzeug :  * Debugger PIN: 912-041-855
+2022-10-12 12:46:29,712 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:46:29] "GET /blog/2/comment HTTP/1.1" 200 -
+2022-10-12 12:46:38,770 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:46:38] "GET /blog/4/comment HTTP/1.1" 200 -
+2022-10-12 12:46:43,502 INFO Blog_project.myproject : Blog : {'title': 'justin biber', 'comments': [], 'blog': 'The artist withdrew from the music biz in 2014, at the zenith of his singing career. His 18-month absence from socialisation was eventually discovered to be due to his bipolar disorder. Nevertheless, he made a solid comeback in 2018 and has continued to produce popular songs and videos since then', 'author': 'Vaibhav', 'id': 4}!
+2022-10-12 12:46:43,504 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:46:43] "GET /blog/4 HTTP/1.1" 200 -
+2022-10-12 12:50:40,078 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-12 12:50:40,078 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-12 12:50:40,080 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:50:40,867 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:50:40,889 INFO werkzeug :  * Debugger PIN: 739-441-364
+2022-10-12 12:50:50,976 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:50:50] "POST /login HTTP/1.1" 200 -
+2022-10-12 12:51:02,829 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:51:02] "POST /login HTTP/1.1" 200 -
+2022-10-12 12:51:11,785 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:51:11] "GET /user HTTP/1.1" 200 -
+2022-10-12 12:51:20,742 INFO Blog_project.myproject : User : {'public_id': '0783405f-0f40-4170-b102-f2f88864b598', 'admin': True, 'username': 'Admin', 'id': 1}
+2022-10-12 12:51:20,743 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:51:20] "GET /user/0783405f-0f40-4170-b102-f2f88864b598 HTTP/1.1" 200 -
+2022-10-12 12:51:30,489 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:51:30] "GET /blog HTTP/1.1" 200 -
+2022-10-12 12:51:47,649 INFO Blog_project.myproject : Blog : {'blog': 'Abdur Rehman Shahrukh Khan was born on November 02, 1965 in New Delhi to Meer Taj Mohammed Khan & Lateef Fatima Khan. He also has an elder sister, Shehnaz Lalarukh. He spent his early days in Bangalore with his grandparents. His father used to run a restaurant in Delhi. His father died in 1981 and mother in 1991', 'comments': [{'author': 'Admin', 'post_id': 2, 'id': 4, 'text': 'Great man'}, {'author': 'Admin', 'post_id': 2, 'id': 5, 'text': 'Good man'}, {'author': 'Admin', 'post_id': 2, 'id': 6, 'text': 'Best Actor'}], 'id': 2, 'title': 'sharuk khan', 'author': 'Admin'}!
+2022-10-12 12:51:47,650 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:51:47] "GET /blog/2 HTTP/1.1" 200 -
+2022-10-12 12:52:00,872 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:52:00] "GET /blog/2/comment HTTP/1.1" 200 -
+2022-10-12 12:52:42,455 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:52:42,750 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:52:44,424 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:52:44,434 INFO werkzeug :  * Debugger PIN: 117-112-589
+2022-10-12 12:52:44,453 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:52:44] "GET /blog/2/comment HTTP/1.1" 200 -
+2022-10-12 12:52:59,058 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:52:59] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 12:53:02,724 INFO Blog_project.myproject : Blog : {'comments': [], 'author': 'Vaibhav', 'title': 'Honey Singh', 'id': 3, 'blog': 'The artist withdrew from the music biz in 2014, at the zenith of his singing career. His 18-month absence from socialisation was eventually discovered to be due to his bipolar disorder. Nevertheless, he made a solid comeback in 2018 and has continued to produce popular songs and videos since then'}!
+2022-10-12 12:53:02,725 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:53:02] "GET /blog/3 HTTP/1.1" 200 -
+2022-10-12 12:54:30,733 INFO Blog_project.myproject : Blog : {'comments': [], 'author': 'Vaibhav', 'title': 'Honey Singh', 'id': 3, 'blog': 'The artist withdrew from the music biz in 2014, at the zenith of his singing career. His 18-month absence from socialisation was eventually discovered to be due to his bipolar disorder. Nevertheless, he made a solid comeback in 2018 and has continued to produce popular songs and videos since then'}!
+2022-10-12 12:54:30,735 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:54:30] "GET /blog/3 HTTP/1.1" 200 -
+2022-10-12 12:54:36,986 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:54:36] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 12:54:39,140 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:54:39] "[35m[1mGET /blog/3/comment HTTP/1.1[0m" 500 -
+2022-10-12 12:54:41,388 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:54:41] "[35m[1mGET /blog/3/comment HTTP/1.1[0m" 500 -
+2022-10-12 12:55:25,492 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:55:25,705 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:55:26,493 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:55:26,501 INFO werkzeug :  * Debugger PIN: 115-598-646
+2022-10-12 12:56:05,023 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:56:05,330 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:56:06,433 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:56:06,440 INFO werkzeug :  * Debugger PIN: 144-233-600
+2022-10-12 12:56:09,180 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:56:09] "GET /blog/2/comment HTTP/1.1" 200 -
+2022-10-12 12:56:10,094 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:56:10] "[35m[1mGET /blog/2/comment HTTP/1.1[0m" 500 -
+2022-10-12 12:56:11,597 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:56:11] "[35m[1mGET /blog/2/comment HTTP/1.1[0m" 500 -
+2022-10-12 12:56:20,129 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:56:20] "GET /blog/1/comment HTTP/1.1" 200 -
+2022-10-12 12:56:25,422 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:56:25] "[35m[1mGET /blog/1/comment HTTP/1.1[0m" 500 -
+2022-10-12 12:56:33,785 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:56:33,980 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:56:35,171 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:56:35,181 INFO werkzeug :  * Debugger PIN: 122-642-447
+2022-10-12 12:57:07,615 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:57:07,844 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:57:08,603 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:57:08,611 INFO werkzeug :  * Debugger PIN: 642-156-965
+2022-10-12 12:57:08,632 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:57:08] "GET /blog/1/comment HTTP/1.1" 200 -
+2022-10-12 12:57:17,129 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:57:17] "GET /blog/2/comment HTTP/1.1" 200 -
+2022-10-12 12:57:20,695 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:57:20] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 12:57:22,426 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:57:22] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 12:58:33,764 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:58:33,990 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:58:35,406 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:58:35,414 INFO werkzeug :  * Debugger PIN: 792-727-912
+2022-10-12 12:58:35,431 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:58:35] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 12:59:37,333 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 12:59:37,601 INFO werkzeug :  * Restarting with stat
+2022-10-12 12:59:38,644 WARNING werkzeug :  * Debugger is active!
+2022-10-12 12:59:38,654 INFO werkzeug :  * Debugger PIN: 310-981-463
+2022-10-12 12:59:38,671 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:59:38] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 12:59:39,589 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:59:39] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 12:59:40,887 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 12:59:40] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 13:00:20,234 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 13:00:20,546 INFO werkzeug :  * Restarting with stat
+2022-10-12 13:00:22,406 WARNING werkzeug :  * Debugger is active!
+2022-10-12 13:00:22,414 INFO werkzeug :  * Debugger PIN: 191-918-105
+2022-10-12 13:00:22,430 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:00:22] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 13:00:50,790 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 13:00:51,033 INFO werkzeug :  * Restarting with stat
+2022-10-12 13:00:52,007 WARNING werkzeug :  * Debugger is active!
+2022-10-12 13:00:52,014 INFO werkzeug :  * Debugger PIN: 206-823-423
+2022-10-12 13:00:52,032 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:00:52] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 13:04:08,896 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 13:04:09,449 INFO werkzeug :  * Restarting with stat
+2022-10-12 13:04:12,177 WARNING werkzeug :  * Debugger is active!
+2022-10-12 13:04:12,204 INFO werkzeug :  * Debugger PIN: 628-000-044
+2022-10-12 13:04:36,538 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:04:36] "[35m[1mGET /blog/3/comment HTTP/1.1[0m" 500 -
+2022-10-12 13:05:12,110 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 13:05:12,903 INFO werkzeug :  * Restarting with stat
+2022-10-12 13:05:14,948 WARNING werkzeug :  * Debugger is active!
+2022-10-12 13:05:14,969 INFO werkzeug :  * Debugger PIN: 128-691-496
+2022-10-12 13:05:24,191 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 13:05:24,424 INFO werkzeug :  * Restarting with stat
+2022-10-12 13:05:25,408 WARNING werkzeug :  * Debugger is active!
+2022-10-12 13:05:25,421 INFO werkzeug :  * Debugger PIN: 129-426-354
+2022-10-12 13:05:25,456 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:05:25] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 13:05:38,670 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 13:05:39,404 INFO werkzeug :  * Restarting with stat
+2022-10-12 13:05:41,466 WARNING werkzeug :  * Debugger is active!
+2022-10-12 13:05:41,479 INFO werkzeug :  * Debugger PIN: 753-467-777
+2022-10-12 13:05:41,524 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:05:41] "GET /blog/3/comment HTTP/1.1" 200 -
+2022-10-12 13:06:14,029 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 13:06:14,722 INFO werkzeug :  * Restarting with stat
+2022-10-12 13:06:16,090 WARNING werkzeug :  * Debugger is active!
+2022-10-12 13:06:16,110 INFO werkzeug :  * Debugger PIN: 122-746-677
+2022-10-12 13:06:16,151 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:06:16] "[31m[1mGET /blog/3/comment HTTP/1.1[0m" 401 -
+2022-10-12 13:06:30,653 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:06:30] "POST /login HTTP/1.1" 200 -
+2022-10-12 13:06:43,300 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:06:43] "POST /login HTTP/1.1" 200 -
+2022-10-12 13:06:49,901 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:06:49] "[31m[1mGET /user HTTP/1.1[0m" 401 -
+2022-10-12 13:06:59,804 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:06:59] "POST /login HTTP/1.1" 200 -
+2022-10-12 13:07:10,140 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:07:10] "GET /user HTTP/1.1" 200 -
+2022-10-12 13:07:14,082 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:07:14] "GET /user HTTP/1.1" 200 -
+2022-10-12 13:08:29,104 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:08:29] "GET /blog HTTP/1.1" 200 -
+2022-10-12 13:08:32,892 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:08:32] "GET /blog HTTP/1.1" 200 -
+2022-10-12 13:08:39,111 INFO Blog_project.myproject : Blog : {'title': 'sharuk khan', 'blog': 'Abdur Rehman Shahrukh Khan was born on November 02, 1965 in New Delhi to Meer Taj Mohammed Khan & Lateef Fatima Khan. He also has an elder sister, Shehnaz Lalarukh. He spent his early days in Bangalore with his grandparents. His father used to run a restaurant in Delhi. His father died in 1981 and mother in 1991', 'comments': [{'post_id': 2, 'id': 4, 'author': 'Admin', 'text': 'Great man'}, {'post_id': 2, 'id': 5, 'author': 'Admin', 'text': 'Good man'}, {'post_id': 2, 'id': 6, 'author': 'Admin', 'text': 'Best Actor'}], 'id': 2, 'author': 'Admin'}!
+2022-10-12 13:08:39,113 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:08:39] "GET /blog/2 HTTP/1.1" 200 -
+2022-10-12 13:08:43,120 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:08:43] "[33mGET /blog/2/comme HTTP/1.1[0m" 404 -
+2022-10-12 13:08:45,331 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:08:45] "[33mGET /blog/2/commeent HTTP/1.1[0m" 404 -
+2022-10-12 13:08:51,042 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 13:08:51] "GET /blog/2/comment HTTP/1.1" 200 -
+2022-10-12 17:01:07,825 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-12 17:01:07,826 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2022-10-12 17:01:07,827 INFO werkzeug :  * Restarting with stat
+2022-10-12 17:01:08,483 WARNING werkzeug :  * Debugger is active!
+2022-10-12 17:01:08,499 INFO werkzeug :  * Debugger PIN: 130-579-965
+2022-10-12 17:07:09,001 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 17:07:09] "[31m[1mPUT /login HTTP/1.1[0m" 405 -
+2022-10-12 17:07:18,214 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 17:07:18] "[31m[1mPUT /login HTTP/1.1[0m" 405 -
+2022-10-12 17:07:21,694 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 17:07:21] "POST /login HTTP/1.1" 200 -
+2022-10-12 17:07:54,049 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 17:07:54] "POST /login HTTP/1.1" 200 -
+2022-10-12 17:07:59,573 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 17:07:59] "GET /user HTTP/1.1" 200 -
+2022-10-12 17:08:54,563 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 17:08:54,732 INFO werkzeug :  * Restarting with stat
+2022-10-12 17:08:55,836 WARNING werkzeug :  * Debugger is active!
+2022-10-12 17:08:55,844 INFO werkzeug :  * Debugger PIN: 741-985-395
+2022-10-12 17:08:55,863 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 17:08:55] "GET /user HTTP/1.1" 200 -
+2022-10-12 17:09:11,073 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 17:09:11,247 INFO werkzeug :  * Restarting with stat
+2022-10-12 17:09:12,460 WARNING werkzeug :  * Debugger is active!
+2022-10-12 17:09:12,469 INFO werkzeug :  * Debugger PIN: 114-789-976
+2022-10-12 17:09:12,485 INFO Blog_project.myproject : User : [{'public_id': '0783405f-0f40-4170-b102-f2f88864b598', 'id': 1, 'username': 'Admin', 'admin': True}, {'public_id': 'a9c98ea0-a6d7-40ab-a165-0d1f9c062328', 'id': 2, 'username': 'Vaibhav', 'admin': False}, {'public_id': 'b42c3978-6527-4bb7-babd-b9bf4ff6ab6b', 'id': 3, 'username': 'Sameer', 'admin': False}, {'public_id': 'f53fe98b-d5c3-4079-bdf7-96e62500c85b', 'id': 4, 'username': 'Sam', 'admin': False}, {'public_id': '1f8af39f-48d3-457b-8817-a818ec79972f', 'id': 5, 'username': 'sharukh', 'admin': False}, {'public_id': '2d2879e6-c13e-4ead-93e7-600f7bd43827', 'id': 6, 'username': 'salman', 'admin': False}]
+2022-10-12 17:09:12,486 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 17:09:12] "GET /user HTTP/1.1" 200 -
+2022-10-12 17:11:28,172 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 17:11:28,360 INFO werkzeug :  * Restarting with stat
+2022-10-12 17:11:29,654 WARNING werkzeug :  * Debugger is active!
+2022-10-12 17:11:29,667 INFO werkzeug :  * Debugger PIN: 106-242-884
+2022-10-12 17:11:29,723 INFO Blog_project.myproject : User : [{'public_id': '0783405f-0f40-4170-b102-f2f88864b598', 'id': 1, 'username': 'Admin', 'admin': True}, {'public_id': 'a9c98ea0-a6d7-40ab-a165-0d1f9c062328', 'id': 2, 'username': 'Vaibhav', 'admin': False}, {'public_id': 'b42c3978-6527-4bb7-babd-b9bf4ff6ab6b', 'id': 3, 'username': 'Sameer', 'admin': False}, {'public_id': 'f53fe98b-d5c3-4079-bdf7-96e62500c85b', 'id': 4, 'username': 'Sam', 'admin': False}, {'public_id': '1f8af39f-48d3-457b-8817-a818ec79972f', 'id': 5, 'username': 'sharukh', 'admin': False}, {'public_id': '2d2879e6-c13e-4ead-93e7-600f7bd43827', 'id': 6, 'username': 'salman', 'admin': False}]
+2022-10-12 17:11:29,725 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 17:11:29] "GET /user HTTP/1.1" 200 -
+2022-10-12 17:12:42,066 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 17:12:42,862 INFO werkzeug :  * Restarting with stat
+2022-10-12 17:12:47,121 WARNING werkzeug :  * Debugger is active!
+2022-10-12 17:12:47,147 INFO werkzeug :  * Debugger PIN: 661-559-586
+2022-10-12 17:12:47,180 INFO Blog_project.myproject : User : [{'public_id': '0783405f-0f40-4170-b102-f2f88864b598', 'id': 1, 'username': 'Admin', 'admin': True}, {'public_id': 'a9c98ea0-a6d7-40ab-a165-0d1f9c062328', 'id': 2, 'username': 'Vaibhav', 'admin': False}, {'public_id': 'b42c3978-6527-4bb7-babd-b9bf4ff6ab6b', 'id': 3, 'username': 'Sameer', 'admin': False}, {'public_id': 'f53fe98b-d5c3-4079-bdf7-96e62500c85b', 'id': 4, 'username': 'Sam', 'admin': False}, {'public_id': '1f8af39f-48d3-457b-8817-a818ec79972f', 'id': 5, 'username': 'sharukh', 'admin': False}, {'public_id': '2d2879e6-c13e-4ead-93e7-600f7bd43827', 'id': 6, 'username': 'salman', 'admin': False}]
+2022-10-12 17:12:47,182 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 17:12:47] "GET /user HTTP/1.1" 200 -
+2022-10-12 17:13:24,623 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/routes/routes.py', reloading
+2022-10-12 17:13:24,878 INFO werkzeug :  * Restarting with stat
+2022-10-12 17:13:26,896 WARNING werkzeug :  * Debugger is active!
+2022-10-12 17:13:26,908 INFO werkzeug :  * Debugger PIN: 106-119-031
+2022-10-12 17:13:26,953 INFO Blog_project.myproject : User : [{'public_id': '0783405f-0f40-4170-b102-f2f88864b598', 'id': 1, 'username': 'Admin', 'admin': True}, {'public_id': 'a9c98ea0-a6d7-40ab-a165-0d1f9c062328', 'id': 2, 'username': 'Vaibhav', 'admin': False}, {'public_id': 'b42c3978-6527-4bb7-babd-b9bf4ff6ab6b', 'id': 3, 'username': 'Sameer', 'admin': False}, {'public_id': 'f53fe98b-d5c3-4079-bdf7-96e62500c85b', 'id': 4, 'username': 'Sam', 'admin': False}, {'public_id': '1f8af39f-48d3-457b-8817-a818ec79972f', 'id': 5, 'username': 'sharukh', 'admin': False}, {'public_id': '2d2879e6-c13e-4ead-93e7-600f7bd43827', 'id': 6, 'username': 'salman', 'admin': False}]
+2022-10-12 17:13:26,954 INFO werkzeug : 127.0.0.1 - - [12/Oct/2022 17:13:26] "GET /user HTTP/1.1" 200 -
+2022-10-12 17:16:21,144 INFO werkzeug :  * Detected change in '/home/vaibhav/PycharmProjects/blog with blue print/Blog_project/myproject/models/models.py', reloading
+2022-10-12 17:16:21,323 INFO werkzeug :  * Restarting with stat
+2022-10-12 17:16:22,852 WARNING werkzeug :  * Debugger is active!
+2022-10-12 17:16:22,860 INFO werkzeug :  * Debugger PIN: 648-558-366

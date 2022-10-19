@@ -1,12 +1,16 @@
 import uuid
+from ast import literal_eval
+
 from flask import Blueprint, jsonify, request
 from flask_jwt_extended import create_access_token, get_jwt_identity, jwt_required
 from flask_login import LoginManager
 from werkzeug.security import generate_password_hash, check_password_hash
 
-from ..extensions import db,redis_client
+from ..extensions import db, redis_cache
 from ..models.models import User, Blog, Comment, CommentSchema, BlogSchema, UserSchema
 from flask import current_app as app
+
+from ..constants import USER_LIST, BLOG_LIST, COMMENT_LIST
 
 api = Blueprint('api', __name__)
 
@@ -78,24 +82,49 @@ def login_user():
         return jsonify({'message': "User does not exits !!!"})
 
 
+#
+# @api.route('/user', methods=['GET'])
+# @jwt_required()
+# def get_all_users():
+#
+#     users = User.query.all()
+#
+#     if users:
+#         # marshmallow serialization on user
+#         user_schema = UserSchema(many=True)
+#         output = user_schema.dump(users)
+#         # if redis_client.exits()
+#
+#         app.logger.info("Users : %s", users)
+#         return jsonify({'users': output})
+#     else:
+#         app.logger.info("No user found !!!")
+#         return jsonify({'message': 'No user found'})
+
+
 @api.route('/user', methods=['GET'])
 @jwt_required()
 def get_all_users():
-    # Access the identity of the current user with get_jwt_identity
-    current_user = get_jwt_identity()
-    app.logger.info("Current User : %s", current_user)
-    access_token = create_access_token(identity=current_user)
-    users = User.query.all()
-
-    if users:
-        # marshmallow serialization on user
-        user_schema = UserSchema(many=True)
-        output = user_schema.dump(users)
-        app.logger.info("Users : %s", users)
-        return jsonify({'users': output})
+    if redis_cache.exists(USER_LIST):
+        print("Getting User Data from redis Cache")
+        users = redis_cache.get(USER_LIST)
+        '''UTF8 Decoder is a variable-length character
+         decoding that can make any Unicode character readable.
+         Safely evaluate an expression node or a string containing
+         a Python  expression. '''
+        users = literal_eval(users.decode('utf8'))
+        app.logger.info("User : %s", users)
+        return jsonify({'users': users})
     else:
-        app.logger.info("No user found !!!")
-        return jsonify({'message': 'No user found'})
+        print("Getting User Data from Sqlite")
+        users = User.query.all()
+        user_schema = UserSchema(many=True)
+        users = user_schema.dump(users)
+        users = str(users)
+        redis_cache.set(USER_LIST, users)
+        print("User cache set")
+        app.logger.info("User : %s", users)
+        return jsonify({'users': users})
 
 
 @api.route('/user/<public_id>', methods=['GET'])
@@ -148,13 +177,24 @@ def delete_user(public_id):
 @api.route('/blog', methods=['GET'])
 @jwt_required()
 def get_all_blog():
-    blogs = Blog.query.all()
+    if redis_cache.exists(BLOG_LIST):
+        print("Getting Blog Data from redis Cache")
+        blogs = redis_cache.get(BLOG_LIST)
+        blogs = literal_eval(blogs.decode('utf8'))
+        return jsonify({'users': blogs})
+    else:
+        print("Getting Blog Data from Sqlite")
+        blogs = Blog.query.all()
 
-    # Blog serialization using marshmallow
-    blog_schema = BlogSchema(many=True)
-    output = blog_schema.dump(blogs)
-    app.logger.info("Blogs : %s", output)
-    return jsonify({'Blogs': output})
+        # Blog serialization using marshmallow
+        blog_schema = BlogSchema(many=True)
+        blogs = blog_schema.dump(blogs)
+        blogs = str(blogs)
+        # setting the redis cache
+        redis_cache.set(BLOG_LIST, blogs)
+        print("User cache set")
+
+        return jsonify({'Blogs': blogs})
 
 
 @api.route('/blog/<blog_id>', methods=['GET'])
@@ -252,17 +292,26 @@ def delete_blog(blog_id):
 @api.route('/blog/<blog_id>/comment', methods=['GET'])
 @jwt_required()
 def get_all_comment(blog_id):
-    current_user = get_jwt_identity()
-    access_token = create_access_token(identity=current_user)
+    if redis_cache.exists(COMMENT_LIST + blog_id):
+        print(COMMENT_LIST + blog_id)
+        print("Getting Comment Data from redis Cache")
+        comments = redis_cache.get(COMMENT_LIST + blog_id)
+        comments = literal_eval(comments.decode('utf8'))
+        return jsonify({'comments': comments})
 
-    comments = Comment.query.filter_by(post_id=blog_id).all()
-    if comments:
-        comment_schema = CommentSchema(many=True)
-        comment_data = comment_schema.dump(comments)
-        app.logger.info("Comment Data : %s", comment_data)
-        return jsonify(comment_data)
     else:
-        return jsonify({'message': "No comments found"})
+        print("Getting User Data from Sqlite")
+        comments = Comment.query.filter_by(post_id=blog_id).all()
+        if comments:
+            comment_schema = CommentSchema(many=True)
+            comments = comment_schema.dump(comments)
+            comments = str(comments)
+            redis_cache.set(COMMENT_LIST + blog_id, comments)
+            print("Comment cache set")
+
+            return jsonify({'comments': comments})
+        else:
+            return jsonify({'message': "No Comments Found"})
 
 
 @api.route('/blog/<blog_id>/comment/<comment_id>', methods=['GET'])
@@ -308,16 +357,15 @@ def create_comment(blog_id):
 @jwt_required()
 def delete_comment(blog_id, comment_id):
     current_user = get_jwt_identity()
-    access_token = create_access_token(identity=current_user)
+
     comment = Comment.query.filter_by(id=comment_id, author=current_user).first()
 
     if not comment:
         app.logger.info('No Comment found by User!')
-        return jsonify({'message': 'No Comment found by User!'})
+        return jsonify({'message': 'This comment comment belong to other user!'})
 
     db.session.delete(comment)
     db.session.commit()
-    print(comment)
     app.logger.info('Comment  deleted!')
 
     return jsonify({'message': 'Comment  deleted!'})
