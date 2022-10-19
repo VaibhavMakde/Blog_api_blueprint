@@ -24,7 +24,7 @@ To deploy this project run
 Clone the project
 
 ```bash
-  git clone https://github.com/VaibhavMakde/Blog-API-flask-framework.git
+  git clone https://github.com/VaibhavMakde/Blog_api_blueprint.git
 ```
 
 Go to the project directory
