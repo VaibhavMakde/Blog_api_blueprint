@@ -1,6 +1,6 @@
 import logging
 from flask import Flask
-from flask_redis import FlaskRedis
+
 from .extensions import db, migrate, jwt, redis_cache
 
 
@@ -11,6 +11,8 @@ def create_app():
                         format='%(asctime)s %(levelname)s %(name)s : %(message)s')
 
     app = Flask(__name__)
+
+    # ////////////////////// app config ///////////////////////////////
 
     app.config['SECRET_KEY'] = '01d30bbff986007764fabbdf'
     app.config[
@@ -32,6 +34,7 @@ def create_app():
 
     '''The init_app method exists so that the SQLite3 
         object can be instantiated without requiring an app object. '''
+        
     db.init_app(app)
     migrate.init_app(app, db)
     jwt.init_app(app)
@@ -41,8 +44,11 @@ def create_app():
 
 
 '''STEPS TO RUN PROJECT:
+
+
 1.export FLASK_APP=myproject
 2. export FLASK_DEBUG=1
 3.flask run
+4.http://127.0.0.1:5000/
 
 '''

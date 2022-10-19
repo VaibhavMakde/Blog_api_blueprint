@@ -102,6 +102,11 @@ def login_user():
 #         return jsonify({'message': 'No user found'})
 
 
+
+
+# //////////////////////// user routes ////////////////////////////////// 
+
+
 @api.route('/user', methods=['GET'])
 @jwt_required()
 def get_all_users():
@@ -127,6 +132,7 @@ def get_all_users():
         return jsonify({'users': users})
 
 
+#  get user by id
 @api.route('/user/<public_id>', methods=['GET'])
 @jwt_required()
 def get_one_user(public_id):
@@ -159,6 +165,7 @@ def promote_user(public_id):
     return jsonify({'message': 'The user has been promoted!'})
 
 
+# delete user by id
 @api.route('/user/<public_id>', methods=['DELETE'])
 @jwt_required()
 def delete_user(public_id):
@@ -174,6 +181,11 @@ def delete_user(public_id):
     return jsonify({'message': 'The user has been deleted!'})
 
 
+
+
+# /////////////////////////// Blog routes /////////////////////////////////
+
+# get all blogs
 @api.route('/blog', methods=['GET'])
 @jwt_required()
 def get_all_blog():
@@ -196,7 +208,7 @@ def get_all_blog():
 
         return jsonify({'Blogs': blogs})
 
-
+#  get blog by id
 @api.route('/blog/<blog_id>', methods=['GET'])
 @jwt_required()
 def get_one_blog(blog_id):
@@ -214,7 +226,7 @@ def get_one_blog(blog_id):
     app.logger.info("Blog : %s!", output)
     return jsonify(output)
 
-
+#  searching blog 
 @api.route('/blog/search', methods=['POST'])
 @jwt_required()
 def search():
@@ -253,7 +265,7 @@ def search():
     app.logger.info("Output : %s", output)
     return jsonify(output)
 
-
+#  create blog
 @api.route('/blog', methods=['POST'])
 @jwt_required()
 def create_blog():
@@ -289,6 +301,12 @@ def delete_blog(blog_id):
         return jsonify({'message': 'No Blog found!'})
 
 
+
+
+# ///////////////////////////comment routes ///////////////////////////////
+
+
+# get all comment on blog
 @api.route('/blog/<blog_id>/comment', methods=['GET'])
 @jwt_required()
 def get_all_comment(blog_id):
@@ -314,6 +332,7 @@ def get_all_comment(blog_id):
             return jsonify({'message': "No Comments Found"})
 
 
+# fetch comment by comment id
 @api.route('/blog/<blog_id>/comment/<comment_id>', methods=['GET'])
 @jwt_required()
 def get_one_comment(blog_id, comment_id):
@@ -338,6 +357,7 @@ def get_one_comment(blog_id, comment_id):
         return jsonify({"message": "No comment Found !!!"})
 
 
+# create comment on blog
 @api.route('/blog/<blog_id>/comment', methods=['POST'])
 @jwt_required()
 def create_comment(blog_id):
@@ -352,7 +372,7 @@ def create_comment(blog_id):
 
     return jsonify({'message': "Commented on Blog!"})
 
-
+#  delete the comment on blog
 @api.route('/blog/<blog_id>/comment/<comment_id>', methods=['DELETE'])
 @jwt_required()
 def delete_comment(blog_id, comment_id):

@@ -9,5 +9,4 @@ ma = Marshmallow()
 
 migrate = Migrate()
 jwt = JWTManager()
-#  redis configurations
 redis_cache = FlaskRedis()
